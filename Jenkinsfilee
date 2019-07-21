@@ -12,5 +12,4 @@ node{
    }
   stage('Slack Notification'){
       slackSend channel: '#jenkins-integration', color: 'good', iconEmoji: '', message: 'Welcome to jenkins ,slackkkkkkkkkkkkkkk', token: 'https://hooks.slack.com/services', tokenCredentialId: 'jenkins-demo', username: ''}
- }
 }
