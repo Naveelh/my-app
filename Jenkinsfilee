@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/javahometech/my-app'
+     git 'https://github.com/Naveelh/my-app'
    }
    stage('Compile-Package'){
       def mvnHome = tool name: 'maven-6', type: 'maven'
@@ -12,11 +12,12 @@ node{
    }
    stage('Slack Notification'){
        slackSend baseUrl: 'https://hooks.slack.com/services/', 
-       channel: '#jenkins-integration', 
+       channel: '#jenkins-pipeline-lab', 
        color: 'good', 
        iconEmoji: '', 
-       message: 'welcome to jenkins', 
-       tokenCredentialId: 'slcak-demoo', 
-       username: ''
+       message: 'welcome to jenkins hahaha', 
+       tokenCredentialId: 'jenkins-lab1', 
+       username: 'naveel12'
    }
+   
 }
