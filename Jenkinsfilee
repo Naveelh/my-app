@@ -11,5 +11,12 @@ node{
       this is test''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'naveelhashmi123@gmail.com'
    }
   stage('Slack Notification'){
-      slackSend channel: '#jenkins-integration', color: 'good', iconEmoji: '', message: 'Welcome to jenkins ,slackkkkkkkkkkkkkkk', token: 'https://hooks.slack.com/services', tokenCredentialId: 'jenkins-demo', username: ''}
+      slackSend channel: '#jenkins-integration',
+      color: 'good', 
+      iconEmoji: '',
+      message: 'Welcome to jenkins ,slackkkkkkkkkkkkkkk', 
+      token: 'https://hooks.slack.com/services', 
+      tokenCredentialId: 'jenkins-demo', 
+      username: ''
+    }
 }
