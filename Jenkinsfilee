@@ -11,7 +11,7 @@ node{
        channel: '#jenkins-pipeline-lab', 
        color: 'good', 
        iconEmoji: '', 
-       message: 'welcome to jenkins hahaha', 
+       message: 'Testing again..I want to be successfull any how...god is with me ', 
        tokenCredentialId: 'jenkins-lab1', 
        username: 'naveel12'
    }
